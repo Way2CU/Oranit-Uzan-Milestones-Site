@@ -1,0 +1,154 @@
+/**
+ * Header Style Sheet
+ * Oranit
+ * 
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+header {
+text-align: center;
+background-image: url(../images/header-background.jpg);
+background-position: center center;
+background-size: 1920px 700px;
+background-repeat: no-repeat;
+padding: 0 calc(~'(100% - 1200px)' / 2);
+height: 700px;
+position: relative;
+}
+
+ header img {
+display: block;
+margin: 0 auto;
+width: 30%;
+padding-top: 5%;
+}
+
+header article h1 {
+color: @color_purple;
+margin-bottom: 0.3em;
+font-weight: 300;
+margin-top: 2em;
+}
+
+header article p {
+color: @color_black;
+font-size: 1.2em;
+margin:0;
+}
+
+/* form */
+
+header div#form {
+position: absolute;
+bottom: 15px;
+left: 0;
+right: 0;
+padding: 0px calc(~'(100vw - 1200px)' / 2);
+height: 120px;
+display: block;
+}
+
+header div#form h5 {
+font-size: 1.3em;
+font-weight: 400;
+margin-bottom: 0.5em;
+}
+
+header div#form form {
+text-align: center;
+}
+
+header div#form form span {
+font-size: 0;
+}
+
+header div#form form label {
+display: inline-block;
+vertical-align: middle;
+width: 30%;
+position: relative;
+}
+
+header div#form form label:before {
+content: " ";
+position: absolute;
+top: 50%;
+transform:translatey(-50%);
+left: 0;
+right: 0;
+width: 40px;
+height: 50px;
+background-image: url(../images/form-sprite.svg);
+background-size: 190px;
+background-repeat: no-repeat;
+background-position: calc(~'(100% + 13px)') center;
+overflow-x: hidden;	
+}
+
+header div#form form label:nth-of-type(2):before {
+background-position: calc(~'(100% + 74px)') center;
+}
+
+header div#form form label:nth-of-type(3):before {
+background-position: calc(~'(100% + 135px)') center;
+}
+
+header div#form form label:hover input {
+background-color: white;
+}
+
+header div#form form label input {
+box-sizing: border-box;
+padding-left: 1em;
+padding-right: 45px;
+display: inline-block;
+vertical-align: middle;
+height: 50px;
+border-left: 1px solid transparent;
+border-right: 1px solid @color_purple;
+border-top: 1px solid @color_purple;
+border-bottom: 1px solid @color_purple;
+transition: all 0.5s;
+width: 100%;
+background-color: fade(white, 70%);
+color: @color_black;
+}
+
+header div#form form label input[type="email"] {
+border-left:1px solid @color_purple;
+}
+
+
+header div#form form label input::-webkit-input-placeholder {
+color: @color_black;
+}
+
+header div#form form label input::-moz-input-placeholder {
+color: @color_black;
+}
+
+header div#form form label input:-ms-input-placeholder {
+color: @color_black;
+}
+
+header div#form div.controls {
+display: inline-block;
+vertical-align: middle;
+width: 10%;
+}
+
+header div#form div.controls button {
+border: 1px solid grey;
+color: white;
+font-weight: 400;
+background-color: @color_button;
+width: 100%;
+height: 50px;
+border: 1px solid transparent;
+transition: all 0.3s;
+}
+
+header div#form div.controls button:hover {
+background-color: lighten(@color_button, 5%);
+}
