@@ -21,6 +21,14 @@
 					text_id="header_article"
 					template="parts/header_article.xml"
 				/>
+				<div id="form">
+					<h5><cms:text constant="form_title"/></h5>
+					<cms:module 
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>
+				</div>
 			</header>
 		</body>
 	</html>
