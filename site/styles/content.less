@@ -1,0 +1,125 @@
+/**
+ * Content Style Sheet
+ * Oranit
+ * 
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+section#women,
+section#bar_mitzvah {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-image: url(../images/girls-background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1920px 300px;
+	height: 300px;
+	text-align: center;
+	color: white;
+}
+
+section#women article h2,
+section#women article p,
+section#bar_mitzvah article p, 
+section#bar_mitzvah article h2 {
+	text-shadow: 3px 1px 2px @color_black;
+	font-weight: 300;
+}
+
+section#women article h2,
+section#bar_mitzvah article h2 {
+	margin-top: 0;
+	padding-top: 1em;
+}
+
+section#bar_mitzvah article p:last-child {
+	padding: 1em;
+	border: 1px solid white;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*
+*Section Girls Gallery & Women_Gallery
+*/
+section#women_gallery,
+section#girls {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-color: @color_grey;
+}
+
+section#women_gallery ul,
+section#girls ul {
+	display: block;
+	padding: 0;
+	margin:0; 
+	width: 100%;
+	text-align: right;
+	padding: 2em 0;
+	text-align: center;
+}
+
+section#women_gallery> ul > li,
+section#girls > ul > li {
+	width: 350px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 1em;
+	background-color: white;
+	box-shadow: -2px 2px 20px -4px rgba(0,0,0,0.75);
+	min-height: 430px;
+}
+
+section#women_gallery ul li img,
+section#girls ul li img {
+	display: block;
+}
+
+section#women_gallery ul li h5,
+section#girls ul li h5 {
+	margin: 0;
+	padding: 15px;
+	text-align: right;
+}
+
+section#women_gallery ul  li>ul,
+section#girls ul  li>ul {
+	display: block;
+	padding: 0;
+	padding-right: 15px;
+	text-align: right;
+}
+
+section#women_gallery ul  li>ul li,
+section#girls ul  li>ul li {
+	display: block;
+	list-style-type: disc;
+	padding: 0;
+	width: 90%;
+	display: list-item;
+	margin: 0;
+	margin-right: 20px;
+	padding: 0.2em 0;
+	color: @color_black;
+}
+
+/*
+*Women Section
+*/
+
+section#women {
+	background-image: url(../images/woman-background.jpg);
+}
+
+/*
+*Women_Gallery h3 Section
+*/
+
+section#women_gallery h3 {
+	text-align: center;
+	color: @color_purple;
+	font-weight: 400;
+	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
