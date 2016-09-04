@@ -5,7 +5,7 @@
  * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
-
+footer,
 header {
 text-align: center;
 background-image: url(../images/header-background.jpg);
@@ -17,17 +17,19 @@ height: 700px;
 position: relative;
 }
 
- header img {
+footer img,
+header img {
 display: block;
 margin: 0 auto;
 width: 30%;
 padding-top: 5%;
 }
 
+footer article h2,
 header article h1 {
 color: @color_purple;
 margin-bottom: 0.3em;
-font-weight: 300;
+font-weight: 400;
 margin-top: 2em;
 }
 
@@ -39,6 +41,7 @@ margin:0;
 
 /* form */
 
+footer div#form,
 header div#form {
 position: absolute;
 bottom: 15px;
@@ -55,14 +58,17 @@ font-weight: 400;
 margin-bottom: 0.5em;
 }
 
+footer div#form form,
 header div#form form {
 text-align: center;
 }
 
+footer div#form form span,
 header div#form form span {
 font-size: 0;
 }
 
+footer div#form form label,
 header div#form form label {
 display: inline-block;
 vertical-align: middle;
@@ -70,6 +76,7 @@ width: 30%;
 position: relative;
 }
 
+footer div#form form label:before,
 header div#form form label:before {
 content: " ";
 position: absolute;
@@ -86,18 +93,22 @@ background-position: calc(~'(100% + 13px)') center;
 overflow-x: hidden;	
 }
 
+footer div#form form label:nth-of-type(2):before,
 header div#form form label:nth-of-type(2):before {
 background-position: calc(~'(100% + 74px)') center;
 }
 
+footer div#form form label:nth-of-type(3):before,
 header div#form form label:nth-of-type(3):before {
 background-position: calc(~'(100% + 135px)') center;
 }
 
+footer div#form form label:hover input,
 header div#form form label:hover input {
 background-color: white;
 }
 
+footer div#form form label input,
 header div#form form label input {
 box-sizing: border-box;
 padding-left: 1em;
@@ -115,29 +126,34 @@ background-color: fade(white, 70%);
 color: @color_black;
 }
 
+footer div#form form label input[type="email"],
 header div#form form label input[type="email"] {
 border-left:1px solid @color_purple;
 }
 
-
+footer div#form form label input::-webkit-input-placeholder,
 header div#form form label input::-webkit-input-placeholder {
 color: @color_black;
 }
 
+footer div#form form label input::-moz-input-placeholder, 
 header div#form form label input::-moz-input-placeholder {
 color: @color_black;
 }
 
+footer div#form form label input:-ms-input-placeholder,
 header div#form form label input:-ms-input-placeholder {
 color: @color_black;
 }
 
+footer div#form div.controls,
 header div#form div.controls {
 display: inline-block;
 vertical-align: middle;
 width: 10%;
 }
 
+footer div#form div.controls button,
 header div#form div.controls button {
 border: 1px solid grey;
 color: white;
@@ -149,6 +165,7 @@ border: 1px solid transparent;
 transition: all 0.3s;
 }
 
+footer div#form div.controls button:hover,
 header div#form div.controls button:hover {
 background-color: lighten(@color_button, 5%);
 }
