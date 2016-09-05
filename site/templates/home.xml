@@ -15,13 +15,31 @@
 					alt="logo"
 					cms:eval="src"
 				/>
-				<cms:module 
-					name="articles"
-					action="show"
-					text_id="header_article"
-					template="parts/header_article.xml"
-				/>
+				<cms:desktop>
+					<cms:module 
+						name="articles"
+						action="show"
+						text_id="header_article"
+						template="parts/header_article.xml"
+					/>
+					<div id="form">
+						<h5><cms:text constant="form_title"/></h5>
+						<cms:module 
+							name="contact_form"
+							action="show"
+							text_id="contact_form"
+						/>
+					</div>
+				</cms:desktop>
+			</header>
+			<cms:mobile>
 				<div id="form">
+					<cms:module 
+						name="articles"
+						action="show"
+						text_id="header_article"
+						template="parts/header_article.xml"
+					/>
 					<h5><cms:text constant="form_title"/></h5>
 					<cms:module 
 						name="contact_form"
@@ -29,7 +47,7 @@
 						text_id="contact_form"
 					/>
 				</div>
-			</header>
+			</cms:mobile>
 			<section id="bar_mitzvah">
 				<cms:module 
 					name="articles"
@@ -74,11 +92,6 @@
 				<h3><cms:text constant="women_workshop"/></h3>
 			</section>
 			<footer>
-				<img 
-					src="_BASEURL.'/site/images/logo.svg'"
-					alt="logo"
-					cms:eval="src"
-				/>
 				<cms:module 
 					name="articles"
 					action="show"
