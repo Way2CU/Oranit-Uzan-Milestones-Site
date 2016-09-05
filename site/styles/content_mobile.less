@@ -9,11 +9,13 @@
 *Form Section
 */
 
+footer div#form_footer,
 div#form {
 	padding: 0 0.5em;
 	background: -webkit-linear-gradient(top, @color_beige, @color_grey);
 }
 
+footer div#form_footer article,
 div#form article {
 	text-align: center;
 	color: @color_black;
@@ -25,7 +27,7 @@ div#form article h1 {
 	margin: 0;
 	padding-top: 0.5em;
 }
-
+footer div#form_footer h5,
 div#form h5 {
 	text-align: center;
 	font-weight: 400;
@@ -36,11 +38,13 @@ div#form h5 {
 *Contact Form
 */
 
+footer div#form_footer form,
 div#form form {
 	display: block;
 	width: 100%;
 }
 
+footer div#form_footer form label,
 div#form form label {
 	display: block;
 	width: 100%;
@@ -48,10 +52,12 @@ div#form form label {
 	position: relative;
 }
 
+footer div#form_footer form label span,
 div#form form label span {
 	font-size: 0;
 }
 
+footer div#form_footer form label input,
 div#form form label input {
 	border: 1px solid @color_purple;
 	box-sizing: border-box;
@@ -61,6 +67,7 @@ div#form form label input {
 	overflow-x: hidden;
 }
 
+footer div#form_footer form label:before, 
 div#form form label:before {
 	content: " ";
 	width: 35px;
@@ -76,38 +83,48 @@ div#form form label:before {
 	background-position: calc(~'(100% + 13px)') center;
 }
 
+footer div#form_footer form label:nth-of-type(2):before,
 div#form form label:nth-of-type(2):before {
 	background-position: calc(~'(100% + 70px)') center;
 }
 
+footer div#form_footer form label:nth-of-type(3):before,
 div#form form label:nth-of-type(3):before {
 	background-position: calc(~'(100% + 125px)') center;
 }
 
-
+footer div#form_footer form label input::-webkit-input-placeholder,
 div#form form label input::-webkit-input-placeholder {
 	color: @color_black;
 }
 
+footer div#form_footer form label input::-moz-input-placeholder,
 div#form form label input::-moz-input-placeholder {
 	color: @color_black;
 }
 
+footer div#form_footer form label input:-ms-input-placeholder,
 div#form form label input:-ms-input-placeholder {
 	color: @color_black;
 }
 
+footer div#form_footer form div.controls,
 div#form form div.controls {
 	text-align: center;
 	padding: 0.5em 0 1em 0;
 }
 
+footer div#form_footer form div.controls button,
 div#form form div.controls button {
 	background-color: @color_button;
 	color: white;
 	border: 1px solid transparent;
 	padding: 1em 1.5em;
 }
+
+/*
+*Section Bar_mitsvah & Women grouping
+*/
 
 section#women,
 section#bar_mitzvah {
@@ -175,7 +192,7 @@ section#girls > ul > li {
 	overflow: hidden;
 	background-color: white;
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-	width: 300px;
+	width: 280px;
 	margin: 1em auto;
 }
 
