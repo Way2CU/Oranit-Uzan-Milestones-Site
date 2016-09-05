@@ -54,7 +54,7 @@
 					action="show"
 					text_id="bar_mitzvah"
 					template="stock/article_generic.xml"
-					>
+				>
 				<param name="title" value=""/>
 				</cms:module>
 			</section>
@@ -75,7 +75,7 @@
 					action="show"
 					text_id="women"
 					template="stock/article_generic.xml"
-					>
+				>
 				<param name="title" value=""/>
 				</cms:module>
 			</section>
@@ -93,11 +93,11 @@
 			</section>
 			<footer>
 				<cms:desktop>
-				<img 
-					src="_BASEURL.'/site/images/logo.svg'"
-					alt="logo"
-					cms:eval="src"
-				/>
+					<img 
+						src="_BASEURL.'/site/images/logo.svg'"
+						alt="logo"
+						cms:eval="src"
+					/>
 				</cms:desktop>
 				<cms:module 
 					name="articles"
