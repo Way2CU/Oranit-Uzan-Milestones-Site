@@ -8,14 +8,17 @@
 
 section#women,
 section#bar_mitzvah {
-	padding: 0 calc(~'(100% - 1200px)' / 2);
+	padding: 3.8em calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/girls-background.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 1920px 300px;
-	height: 300px;
 	text-align: center;
 	color: white;
+}
+
+section#women {
+	padding: 5.5em 0;
 }
 
 section#women article h2,
@@ -24,12 +27,17 @@ section#bar_mitzvah article p,
 section#bar_mitzvah article h2 {
 	text-shadow: 3px 1px 2px @color_black;
 	font-weight: 300;
+	margin: 0;
+}
+
+section#women article p,
+section#bar_mitzvah article p {
+	padding: 1em 0;
 }
 
 section#women article h2,
 section#bar_mitzvah article h2 {
-	margin-top: 0;
-	padding-top: 1em;
+	margin: 0;
 }
 
 section#bar_mitzvah article p:last-child {
@@ -68,6 +76,23 @@ section#girls > ul > li {
 	background-color: white;
 	box-shadow: -2px 2px 20px -4px rgba(0,0,0,0.75);
 	min-height: 430px;
+	transition: transform 0.3s;
+}
+
+section#women_gallery > ul > li img,
+section#girls > ul > li img {
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+section#women_gallery > ul > li:hover,
+section#girls > ul > li:hover {
+	transform: scale(1.05);
+}
+
+section#women_gallery > ul > li:hover img,
+section#girls > ul > li:hover img {
+	opacity: 1;
 }
 
 section#women_gallery ul li img,
@@ -122,4 +147,19 @@ section#women_gallery h3 {
 	margin: 0;
 	padding-top: 1em;
 	padding-bottom: 2em;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	section#bar_mitzvah {
+		padding: 3.4em calc(~'(100% - 1200px)' / 2);
+	}
+
+	section#women {
+		padding: 5em calc(~'(100% - 1200px)' / 2);
+	}
+	
+	footer div#form form label, 
+	header div#form form label {
+		width: 25%;
+	}
 }
