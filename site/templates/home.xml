@@ -92,6 +92,13 @@
 				<h3><cms:text constant="women_workshop"/></h3>
 			</section>
 			<footer>
+				<cms:desktop>
+				<img 
+					src="_BASEURL.'/site/images/logo.svg'"
+					alt="logo"
+					cms:eval="src"
+				/>
+				</cms:desktop>
 				<cms:module 
 					name="articles"
 					action="show"
@@ -100,7 +107,7 @@
 					>
 				<param name="title" value=""/>
 				</cms:module>
-				<div id="form">
+				<div id="form_footer">
 					<h5><cms:text constant="form_title_footer"/></h5>
 					<cms:module 
 						name="contact_form"
