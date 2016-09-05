@@ -42,7 +42,7 @@ header article p {
 
 /* form */
 
-footer div#form,
+footer div#form_footer,
 header div#form {
 	position: absolute;
 	bottom: 15px;
@@ -59,17 +59,17 @@ header div#form h5 {
 	margin-bottom: 0.5em;
 }
 
-footer div#form form,
+footer div#form_footer form,
 header div#form form {
 	text-align: center;
 }
 
-footer div#form form span,
+footer div#form_footer form span,
 header div#form form span {
 	font-size: 0;
 }
 
-footer div#form form label,
+footer div#form_footer form label,
 header div#form form label {
 	display: inline-block;
 	vertical-align: middle;
@@ -77,7 +77,7 @@ header div#form form label {
 	position: relative;
 }
 
-footer div#form form label:before,
+footer div#form_footer form label:before,
 header div#form form label:before {
 	content: " ";
 	position: absolute;
@@ -94,22 +94,17 @@ header div#form form label:before {
 	overflow-x: hidden;	
 }
 
-footer div#form form label:nth-of-type(2):before,
+footer div#form_footer form label:nth-of-type(2):before,
 header div#form form label:nth-of-type(2):before {
 	background-position: calc(~'(100% + 74px)') center;
 }
 
-footer div#form form label:nth-of-type(3):before,
+footer div#form_footer form label:nth-of-type(3):before,
 header div#form form label:nth-of-type(3):before {
 	background-position: calc(~'(100% + 135px)') center;
 }
 
-footer div#form form label:hover input,
-header div#form form label:hover input {
-	background-color: white;
-}
-
-footer div#form form label input,
+footer div#form_footer form label input,
 header div#form form label input {
 	box-sizing: border-box;
 	padding-left: 1em;
@@ -127,34 +122,39 @@ header div#form form label input {
 	color: @color_black;
 }
 
-footer div#form form label input[type="email"],
+footer div#form_footer form label:hover input,
+header div#form form label:hover input {
+	background-color: white;
+}
+
+footer div#form_footer form label input[type="email"],
 header div#form form label input[type="email"] {
 	border-left:1px solid @color_purple;
 }
 
-footer div#form form label input::-webkit-input-placeholder,
+footer div#form_footer form label input::-webkit-input-placeholder,
 header div#form form label input::-webkit-input-placeholder {
 	color: @color_black;
 }
 
-footer div#form form label input::-moz-input-placeholder, 
+footer div#form_footer form label input::-moz-input-placeholder, 
 header div#form form label input::-moz-input-placeholder {
 	color: @color_black;
 }
 
-footer div#form form label input:-ms-input-placeholder,
+footer div#form_footer form label input:-ms-input-placeholder,
 header div#form form label input:-ms-input-placeholder {
 	color: @color_black;
 }
 
-footer div#form div.controls,
+footer div#form_footer div.controls,
 header div#form div.controls {
 	display: inline-block;
 	vertical-align: middle;
 	width: 10%;
 }
 
-footer div#form div.controls button,
+footer div#form_footer div.controls button,
 header div#form div.controls button {
 	border: 1px solid grey;
 	color: white;
@@ -166,7 +166,7 @@ header div#form div.controls button {
 	transition: all 0.3s;
 }
 
-footer div#form div.controls button:hover,
+footer div#form_footer div.controls button:hover,
 header div#form div.controls button:hover {
 	background-color: lighten(@color_button, 5%);
 }
