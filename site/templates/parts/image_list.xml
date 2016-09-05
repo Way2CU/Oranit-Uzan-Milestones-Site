@@ -1,19 +1,10 @@
 <document>
 	<li>
-		<cms:desktop>
-			<img 
-				src="gallery::getThumbnailById($params['id'], null, 350, Thumbnail::CONSTRAIN_BOTH)" 
-				alt="$params['title'][$language]"
-				cms:eval="src,alt"
-			/>
-		</cms:desktop>
-		<cms:mobile>
-			<img 
-				src="gallery::getThumbnailById($params['id'], null, 300, Thumbnail::CONSTRAIN_BOTH)" 
-				alt="$params['title'][$language]"
-				cms:eval="src,alt"
-			/>
-		</cms:mobile>
+		<img 
+			src="gallery::getThumbnailById($params['id'], null, 300, Thumbnail::CONSTRAIN_BOTH)" 
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+		/>
 		<h5><cms:var param="title" multilanguage="yes"/></h5>
 		<cms:markdown param="description" multilanguage="yes"/>
 	</li>
