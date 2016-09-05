@@ -1,0 +1,231 @@
+/**
+ * Common_mobile Style Sheet
+ * Oranit
+ * 
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+/*
+*Form Section
+*/
+
+div#form {
+	padding: 0 0.5em;
+	background: -webkit-linear-gradient(top, @color_beige, @color_grey);
+}
+
+div#form article {
+	text-align: center;
+	color: @color_black;
+}
+
+div#form article h1 {
+	color: @color_purple;
+	font-weight: 300;
+	margin: 0;
+	padding-top: 0.5em;
+}
+
+div#form h5 {
+	text-align: center;
+	font-weight: 400;
+	color: @color_black;
+}
+
+/*
+*Contact Form
+*/
+
+div#form form {
+	display: block;
+	width: 100%;
+}
+
+div#form form label {
+	display: block;
+	width: 100%;
+	padding: 0.5em 0;
+	position: relative;
+}
+
+div#form form label span {
+	font-size: 0;
+}
+
+div#form form label input {
+	border: 1px solid @color_purple;
+	box-sizing: border-box;
+	padding:0.5em;
+	width: 100%;
+	padding-right: 45px;
+	overflow-x: hidden;
+}
+
+div#form form label:before {
+	content: " ";
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+	display: block;
+	background-image: url(../images/form-sprite.svg);
+	background-size: 170px;
+	background-repeat: no-repeat;
+	background-position: calc(~'(100% + 13px)') center;
+}
+
+div#form form label:nth-of-type(2):before {
+	background-position: calc(~'(100% + 70px)') center;
+}
+
+div#form form label:nth-of-type(3):before {
+	background-position: calc(~'(100% + 125px)') center;
+}
+
+
+div#form form label input::-webkit-input-placeholder {
+	color: @color_black;
+}
+
+div#form form label input::-moz-input-placeholder {
+	color: @color_black;
+}
+
+div#form form label input:-ms-input-placeholder {
+	color: @color_black;
+}
+
+div#form form div.controls {
+	text-align: center;
+	padding: 0.5em 0 1em 0;
+}
+
+div#form form div.controls button {
+	background-color: @color_button;
+	color: white;
+	border: 1px solid transparent;
+	padding: 1em 1.5em;
+}
+
+section#women,
+section#bar_mitzvah {
+ 	background-image: url(../images/mobile-girls-background.jpg);
+ 	background-size: 100% auto;
+ 	background-position: center bottom;
+ 	background-repeat: no-repeat;
+ 	padding-bottom: 17em;
+ 	background-color: #603874;
+}
+
+section#women article,
+section#bar_mitzvah article {
+ 	text-align: center;
+ 	color: white;
+ 	padding: 0 1em;
+}
+
+section#women article h2,
+section#bar_mitzvah article h2 {
+	margin: 0;
+	padding: 1em;
+	padding-bottom: 0.5em;
+	font-weight: 400;
+}
+
+section#women article p,
+section#bar_mitzvah article p {
+	margin: 0;
+	padding-bottom: 1em;
+}	
+
+section#bar_mitzvah article p:last-child {
+	padding: 0.5em;
+	border: 1px solid white;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*
+*Section Mobile Girls_Gallery
+*/
+
+section#women_gallery,
+section#girls {
+	padding: 1em;
+	background-color: lighten(@color_beige, 10%);
+}
+
+section#women_gallery > ul,
+section#girls > ul {
+	padding: 0;
+	display: block;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+section#women_gallery > ul > li, 
+section#girls > ul > li {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	margin: 1em auto;
+}
+
+section#women_gallery > ul > li:last-child,
+section#girls > ul > li:last-child {
+	margin-bottom: 0;
+}
+
+section#women_gallery > ul > li:nth-child(1),
+section#girls > ul > li:nth-child(1) {
+	margin-top: 0;
+}
+
+section#women_gallery > ul > li img,
+section#girls > ul > li img {
+	display: block;
+	margin: 0 auto;
+}
+
+section#women_gallery > ul > li h5,
+section#girls > ul > li h5 {
+	margin: 0.5em 0;
+}
+
+section#women_gallery > ul > li ul,
+section#girls > ul > li ul {
+	list-style: disc;
+	text-align: right;
+}
+
+/*
+*Section Mobile Women * the rest is grouped with 'Section #bar_mitzvah'
+*/
+
+section#women {
+	background-image: url(../images/mobile-woman-background);
+	padding-bottom: 15em;
+}
+
+section#women article h2 {
+	padding: 1em;
+	font-weight: 300;
+}
+
+/*
+*Section Mobile Women_gallery * the rest is grouped with 'Section #girls'
+*/
+
+section#women_gallery h3 {
+	color: @color_purple;
+	font-weight: 400;
+	text-align: center;
+}
