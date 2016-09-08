@@ -158,15 +158,48 @@ section#women_gallery h3 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	section#bar_mitzvah {
-		padding: 0 calc(~'(100% - 1200px)' / 2);
+		background-position: calc(~'50% - 347px') center;
+	}
+
+	section#bar_mitzvah article {
+		padding-right: 40%;
 	}
 
 	section#women {
-		padding: 0em calc(~'(100% - 1200px)' / 2);
-		height: 300px;
+		padding: 4.5em calc(~'(100% - 1200px)' / 2);
+		background-position: calc(~'50% + 200px');
+		height: auto;
+	}
+
+	section#women article {
+		padding-left: 39%;
+	}
+
+	section#women article h2,
+	section#women article p {
+		padding: 0;
 	}
 	
-	footer div#form form label, 
+	header,
+	footer {
+		background-image: url(../images/tablet_header.jpg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	
+	footer div#form_footer, 
+	header div#form {
+		background-color: fade(black, 50%);
+	}
+
+	footer div#form_footer h5, 
+	header div#form h5 {
+		color: white;
+		margin-bottom: 0;
+		padding-bottom: 0.5em;
+	}
+
+	footer div#form_footer form label, 
 	header div#form form label {
 		width: 25%;
 	}
