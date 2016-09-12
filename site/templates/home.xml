@@ -22,6 +22,13 @@
 						text_id="header_article"
 						template="parts/header_article.xml"
 					/>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone_number'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone_number"/>
+					</a>
 					<div id="form">
 						<h5><cms:text constant="form_title"/></h5>
 						<cms:module 
@@ -40,6 +47,13 @@
 						text_id="header_article"
 						template="parts/header_article.xml"
 					/>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone_number'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone_number"/>
+					</a>
 					<h5><cms:text constant="form_title"/></h5>
 					<cms:module 
 						name="contact_form"
@@ -107,6 +121,13 @@
 					>
 				<param name="title" value=""/>
 				</cms:module>
+				<a
+					href="'tel:'.urlencode(Language::getText('phone_number'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="phone_number"/>
+				</a>
 				<div id="form_footer">
 					<h5><cms:text constant="form_title_footer"/></h5>
 					<cms:module 
