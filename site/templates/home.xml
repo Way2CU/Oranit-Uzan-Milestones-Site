@@ -9,6 +9,7 @@
 		</head>
 
 		<body>
+			<cms:raw file="parts/gtm.txt"/>
 			<header>
 				<img 
 					src="_BASEURL.'/site/images/logo.svg'"
